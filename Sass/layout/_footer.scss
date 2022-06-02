@@ -1,0 +1,23 @@
+.footer{
+    position: absolute;
+    bottom: 0;
+    background: var(--clr-primery);
+    height: 40vh;
+    width: 100%;
+    text-align: center;
+
+    .social_icons{
+        display: flex;
+        width: 100%;
+        height: 50px;
+        // background: rgb(251, 16, 16);
+        justify-content: center;
+        margin-top: 20px;
+        
+        img{
+            width: 50px;
+            height: 50px;
+            padding: 0 10px;
+        }
+    }
+}
