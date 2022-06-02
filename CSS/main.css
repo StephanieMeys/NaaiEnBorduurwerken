@@ -10,6 +10,7 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 a {
@@ -47,7 +48,7 @@ p,
 }
 
 .footer {
-  position: absolute;
+  position: relative;
   bottom: 0;
   background: var(--clr-primery);
   height: 40vh;
@@ -70,20 +71,136 @@ p,
 }
 
 .container {
-  max-width: 768px;
-  margin-bottom: 1rem;
-  margin-left: auto;
-  margin-right: auto;
+  position: relative;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
 }
 
 .container > * {
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin: 0;
 }
 
-.header-mobile {
-  height: 18px;
-  width: 100vw;
-  background-color: green;
+.grid-container {
+  display: grid;
+  height: 100%;
+}
+
+header {
+  display: flex;
+  height: 87px;
+  width: 100%;
+  background: var(--clr-white);
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0px 1px 10px var(--clr-black);
+  z-index: 999;
+}
+
+.navbar {
+  padding: 0 5%;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+.navbar ul li {
+  padding: 0 4em;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar ul li.active::after {
+  content: "";
+  position: absolute;
+  background-color: var(--clr-main);
+  height: 3px;
+  width: 20%;
+  bottom: 1.5em;
+  left: 36%;
+  border-radius: 50px;
+}
+
+.navbar ul li a {
+  color: var(--clr-black);
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.navbar ul li a:hover {
+  color: var(--clr-primery);
+}
+
+.navbar ul li a img {
+  height: auto;
+  width: 7em;
+}
+
+.navbar ul li .dropdown_menu {
+  display: none;
+}
+
+.navbar ul li:hover .dropdown_menu {
+  display: block;
+  position: absolute;
+  top: 100%;
+  margin-left: 5em;
+  margin-top: -10px;
+  background: var(--clr-primery);
+  z-index: 9999;
+}
+
+.navbar ul li:hover .dropdown_menu ul {
+  display: block;
+  width: 10em;
+}
+
+.navbar ul li:hover .dropdown_menu ul li {
+  padding: 2px;
+  margin: 1em;
+  float: left;
+}
+
+.navbar ul li:hover .dropdown_menu ul li a:hover {
+  color: var(--clr-main);
+}
+
+.home {
+  min-height: 90vh;
+}
+
+.home .home_img {
+  width: 100%;
+  min-height: 90vh;
+  background-image: url(../img/Cover.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(50%);
+}
+
+.home .home_text {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 10em;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: var(--clr-white);
+  position: absolute;
+  top: 30%;
+}
+
+.home .home_text h1 {
+  width: 100%;
+}
+
+.home .home_text h4 {
+  width: 100%;
 }
 /*# sourceMappingURL=main.css.map */

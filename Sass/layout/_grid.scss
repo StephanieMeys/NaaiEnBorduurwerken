@@ -1,14 +1,19 @@
 .container {
-    max-width: 768px;
-    margin-bottom: 1rem;
-    margin-left: auto;
-    margin-right: auto;
+    position: relative;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+
+    // background: red;
   
     > * {
-      //all child tags
-      margin-left: 1rem;
-      margin-right: 1rem;
+      margin: 0;
     }
+  }
+
+  .grid-container{
+    display: grid;
+    height: 100%;
   }
 
   
