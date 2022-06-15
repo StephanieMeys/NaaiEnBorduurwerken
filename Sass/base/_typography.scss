@@ -1,6 +1,13 @@
+@font-face {
+    font-family: 'Amaranth';
+    src: url(/Fonts/Amaranth-YP1y.otf);
+}
+
+
 h1,
 .h1{
-    font-size: 30px;
+    font-family: 'Amaranth';
+    font-size: 50px;
     font-weight: bold;
     margin-top: 10px;
 }

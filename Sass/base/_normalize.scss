@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'Amaranth';
+    src: url(/Fonts/Amaranth-YP1y.otf);
+}
+
+
+h1,
+.h1{
+    font-family: 'Amaranth';
+    font-size: $large-sz;
+    margin-top: 10px;
+}
+
+h2,
+.h2{
+    font-family: 'Amaranth';
+    font-size: $medium-sz;
+}
+
+h3,
+.h3{
+    font-family: 'Amaranth';
+    font-size: $medium-sz;
+}
+
+h4,
+.h4{
+    font-family: 'Amaranth';
+    font-size: $medium-sz;
+}
+
+p,
+.p{
+    font-family: 'Amaranth';
+    font-size: $small-sz;
+    font-weight: normal;
+}
