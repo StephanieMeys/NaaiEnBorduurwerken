@@ -1,8 +1,9 @@
+// Desktop
 header{
     display: flex;
     height: 87px;
     width: 100%;
-    background: $bg-clr;
+    background: white;
     align-items: center;
     justify-content: space-around;  
     box-shadow: 0px 1px 10px $clr-black;
@@ -83,3 +84,100 @@ header{
         
     }
 }
+
+// Mobile
+.mobile_navbar{
+    position: absolute;
+    width: 100vw;
+    height: 78px;
+    z-index: 999999;
+    right: 0;
+    top: 0;
+
+    #hamburg{
+        width: 45px;
+        height: 40px;
+        margin: 30px 0 20px 20px;
+        float: right;
+        cursor: pointer;
+    }
+    
+    .logo{
+        margin-top: 17px;
+        width: 7em;
+        height: auto;
+        float: left;
+    }
+
+    ul{
+        display: none; 
+        position: absolute;
+        width: 50%;
+        right: 0;
+        top: 87px;
+        background: $primery-clr;
+        border-bottom-left-radius: 5%;
+        box-shadow: -2px 5px 4px black;
+        
+        z-index: 999;
+        
+        li{
+            list-style: none;
+            padding: 1em;
+            
+            a{
+                font-size: $medium-sz;
+                text-decoration: none;
+
+                &:hover{
+                    color: $secundaire-clr;
+                }
+            }
+
+                #mobile_dropdown_menu{
+                    width: auto;
+                    color: black;
+                    
+
+                    #openDrop{
+                        position: relative;
+                        top: 0;
+                        box-shadow: none;
+                        
+                        li{
+                            display: flex;
+
+                            a{
+                                display: inline-flex;
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        }
+        
+        .change{
+            display: block;
+        }
+    }
+
+
+    // Media
+    @media all and (max-width: 768px){
+        .navbar{
+            display: none;
+        }
+        .mobile_navbar{
+            display: block;
+        }
+    }
+    @media all and (min-width: 769px){
+        .navbar{
+            display: block;
+        }
+        .mobile_navbar{
+            display: none;
+        }
+    }

@@ -29,7 +29,7 @@
 <body>
    
     <header>
-        <!-- Header mobile -->
+        <!-- Desktop navbar -->
             <div class="navbar">
                 <ul>
                     <li class="active"><a href="https://naaienborduurwerken.netlify.app/">Home</a></li>
@@ -46,6 +46,35 @@
                     <li><a href="#">Contact</a></li>
                 </ul>
             </div>
+            <!-- End desktop navbar -->
+
+            <!-- Mobile navbar -->
+            <div class="mobile_navbar">
+                <!-- Toggle -->
+                <a href="https://naaienborduurwerken.netlify.app/"><img src="/img/Logo.png" alt="Logo" class="logo"></a>
+
+                <div id="hamburg" onclick="menuOnClick()">
+                    <img src="/img/icons8-menu-24.png" alt="Menu">
+                </div>
+                <!-- end toggle -->
+                <!-- menu when open -->
+                    <ul id="nav">
+                        <li class="active"><a href="https://naaienborduurwerken.netlify.app/">Home</a></li>
+                        <li><a href="#">Service <img src="https://img.icons8.com/material/24/undefined/sort-right--v2.png" style="width: 15px;" onclick="dropdownOnClick()"/></a>
+                            <div id="mobile_dropdown_menu">
+                                <ul id="openDrop">
+                                    <li><a href="#"><img src="https://img.icons8.com/material/24/undefined/needle.png" style="width: 13px;"/> Retouches</a></li>
+                                    <li><a href="#"><img src="https://img.icons8.com/material/24/undefined/bobbin.png" style="width: 13px;"/> Borduren</a></li>
+                                </ul>
+                            </div>
+                         </li>
+                        <li><a href="#">Over mij</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                <!-- end menu -->
+
+                    <div id="menu-bg"></div>
+            </div>
     </header>
 
     <div class="home">
@@ -56,11 +85,60 @@
                 <h3>Een reparatie, een leuk cadeau? <br> 
                     Naaister Sandra staat voor u klaar!</h3>
             </div>
+            <div class="scrollArrow"></div>
         
     </div>
 
+    <!-- Eerste section deel met contact -->
+    <div class="sec1">
 
+        <div class="sec1_text">
+            <h1>Sandra naai en borduurwerken</h1>
+            <h4> <i> Een naaister vol passie en gedrevenheid.</i></h4>
+            <h3>Van <b>retouches</b> tot <b>borduren.</b> Heeft u een kleine herstelling? Een leuk idee? <br>
+            <b>Sandra</b> maakt het met plezier!</h3>
+        </div>
 
+        <div class="btn_contact">
+            <button><a href="#">Contact</a></button>
+        </div>
+
+    </div>
+    <!-- Einde section -->
+
+    <!-- Tweede section deel -->
+    <div class="sec2">
+
+        <div class="sec2_img">
+            <img src="./img/Naaien.jpg">
+        </div>
+        <div class="sec2_text">
+            <h1>Retouches</h1>
+            <h3><b>Ver</b>smallen, <b>ver</b>korten of <b>ver</b>breden. <br>
+            Het is niet ver te zoeken. 
+            <br><br>
+            Hier bij Sandra zit je op de juiste plaats. Maak vandaag nog jou afspraak, ik zorg voor een snelle service.</h3>
+        </div>
+        <a href=""><div class="nextArrow"></div></a>
+
+    </div>
+
+    <!-- Derde section deel -->
+    <div class="sec3">
+
+        <div class="sec3_img">
+            <img src="./img/Borduren.jpg">
+        </div>
+        <div class="sec3_text">
+            <h1>Borduren</h1>
+            <h3>Een nieuwe geboorte, een nieuwe verjaardag. Of gewoon iets voor je geliefde?
+                <br><br>
+                Met een persoonlijke naam, doe jij niets verkeerds!
+            </h3>
+        </div>
+        <a href=""><div class="nextArrow"></div></a>
+
+    </div>
 
     <footer>
         <div class="footer">
@@ -70,9 +148,11 @@
                 <img src="/img/icons8-facebook-30.png">
                 <img src="/img/icons8-instagram-30.png">
             </div>
-            <br><br>
+            <br>
             <p>Gemaakt bij <a href="https://stephdev.netlify.app/" target="_blank"><span class="bold">_StephDEV_</span></a></p>
         </div>
     </footer>
+
+    <script src="/main.js"></script>
 </body>
 </html>
