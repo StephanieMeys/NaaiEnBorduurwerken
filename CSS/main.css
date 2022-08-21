@@ -435,7 +435,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 25px;
+  margin-top: .2em;
 }
 
 .sec1 .btn_contact button {
@@ -449,7 +449,7 @@ header {
 .sec2 {
   position: relative;
   height: auto;
-  margin-top: 2em;
+  margin-top: 3em;
   margin-bottom: 2em;
   display: flex;
   flex-direction: column;
@@ -479,7 +479,7 @@ header {
 }
 
 .sec2 .sec2_text {
-  padding: 20px;
+  padding: 5px 10px 20px 10px;
 }
 
 .sec2 .sec2_text h1 {
@@ -559,7 +559,7 @@ header {
 }
 
 .sec3 .sec3_text {
-  padding: 20px;
+  padding: 5px 10px 20px 10px;
 }
 
 .sec3 .sec3_text h1 {
