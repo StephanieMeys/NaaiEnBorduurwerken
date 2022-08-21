@@ -96,7 +96,7 @@
         }
 
         h3{
-            font-size: 15px;
+            font-size: 13px;
             font-weight: normal;
         }
     }
@@ -144,17 +144,18 @@
             background-size: auto;
             backdrop-filter: blur(4px);
             border-radius: 5px;
+            object-fit: cover; 
         }
     }
 
     .sec2_text{
         padding: 20px;
         h1{
-            font-size: 20px;
+            font-size: 17px;
         }
 
         h3{
-            font-size: 15px;
+            font-size: 13px;
             font-weight: normal;
             padding: 20px 0 0 0;
         }
@@ -167,13 +168,15 @@
         bottom: 0;
         background: #000;
         border-radius: 50px;
+        transform: translate(50% - 50%);
+
 
         &::before{
             content: "";
             position: absolute;
             width: 10px;
             height: 2px;
-            right: 0;
+            right: -1px;
             bottom: 3px;
             background: #000;
             transform: rotate(40deg);
@@ -186,7 +189,7 @@
             position: absolute;
             width: 10px;
             height: 2px;
-            right: -1px;
+            right: -0.7px;
             top: 3px;
             background: #000;
             transform: rotate(-40deg);
@@ -207,15 +210,6 @@
     align-items: center;
     text-align: center;
 
-
-    // VERDERWERKEN!!!
-    background-image: url(/img/Bg-butterfly.png);
-    background-size: cover;
-    background-position:left;
-    background-repeat: no-repeat;
-    
-
-
     .sec3_img{
         display: flex;
         align-items: center;
@@ -232,6 +226,7 @@
             background-size: auto;
             backdrop-filter: blur(4px);
             border-radius: 5px;
+            object-fit: cover;
         }
     }
 
@@ -239,11 +234,11 @@
         padding: 20px;
 
         h1{
-            font-size: 20px;
+            font-size: 17px;
         }
 
         h3{
-            font-size: 15px;
+            font-size: 13px;
             font-weight: normal;
             padding: 20px 0 0 0;
         }
@@ -256,13 +251,14 @@
         bottom: 0;
         background: #000;
         border-radius: 50px;
+        transform: translate(50% - 50%);
 
         &::before{
             content: "";
             position: absolute;
             width: 10px;
             height: 2px;
-            right: 0;
+            right: -2px;
             bottom: 3px;
             background: #000;
             transform: rotate(40deg);
@@ -275,7 +271,7 @@
             position: absolute;
             width: 10px;
             height: 2px;
-            right: -1px;
+            right: -2px;
             top: 3px;
             background: #000;
             transform: rotate(-40deg);
@@ -283,4 +279,97 @@
 
         }
     }
+}
+
+.sec4{
+    position: relative;
+    height: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .sec4_text{
+        padding: 20px;
+
+        h1{
+            font-size: 20px;
+        }
+    }
+
+        .sec4_carrosel{
+            position: relative;
+            margin-top: 1em;
+            width: 150px;
+            height: 150px;
+            background-color: darkgrey;
+            border-radius: 5px;
+
+            &::before{
+                content: "";
+                position: absolute;
+                width: 150px;
+                height: 150px;
+                background: lightgrey;
+                border-radius: 5px;
+                left: 110%;
+
+            }
+
+            &::after{
+                content: "";
+                position: absolute;
+                width: 150px;
+                height: 150px;
+                background: lightgrey;
+                border-radius: 5px;
+                right: 110%;
+
+            }
+
+            .sec4_carrosel-img{
+                position: absolute;
+                width: 150px;
+                height: 150px;
+                background-image: url(/img/Borduren.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                border-radius: 5px;
+            }     
+        }
+    
+        .sec4_carrosel-dotts{
+                position: relative;
+                width: 29px;
+                height: 5px;
+                background-color: $primery-clr;
+                border-radius: 5px;
+                margin-top: 1em;
+                
+                &::before{
+                    content: "";
+                    position: absolute;
+                    width: 29px;
+                    height: 5px;
+                    right: 120%;
+                    background-color: $secundaire-clr;
+                    border-radius: 5px;
+                }
+
+                &::after{
+                    content: "";
+                    position: absolute;
+                    width: 29px;
+                    height: 5px;
+                    left: 120%;
+                    background-color: $secundaire-clr;
+                    border-radius: 5px;
+                }
+            }
+
+
 }

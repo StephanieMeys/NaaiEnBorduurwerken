@@ -87,16 +87,23 @@ p,
 
 footer {
   position: relative;
-  background: #0073B7;
-  height: 27vh;
-  width: 100%;
-  padding-bottom: 10px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #0073B7;
 }
 
 .footer {
+  position: relative;
   justify-content: center;
   text-align: center;
   align-items: center;
+  margin-top: 0em;
+  margin-bottom: 1em;
+  color: white;
 }
 
 .footer h1 {
@@ -120,6 +127,8 @@ footer {
   width: auto;
   height: 25px;
   padding: 0 10px;
+  filter: brightness(0);
+  filter: invert(1);
 }
 
 .container {
@@ -418,7 +427,7 @@ header {
 }
 
 .sec1 .sec1_text h3 {
-  font-size: 15px;
+  font-size: 13px;
   font-weight: normal;
 }
 
@@ -466,6 +475,7 @@ header {
   background-size: auto;
   backdrop-filter: blur(4px);
   border-radius: 5px;
+  object-fit: cover;
 }
 
 .sec2 .sec2_text {
@@ -473,11 +483,11 @@ header {
 }
 
 .sec2 .sec2_text h1 {
-  font-size: 20px;
+  font-size: 17px;
 }
 
 .sec2 .sec2_text h3 {
-  font-size: 15px;
+  font-size: 13px;
   font-weight: normal;
   padding: 20px 0 0 0;
 }
@@ -489,6 +499,7 @@ header {
   bottom: 0;
   background: #000;
   border-radius: 50px;
+  transform: translate(0%);
 }
 
 .sec2 .nextArrow::before {
@@ -496,7 +507,7 @@ header {
   position: absolute;
   width: 10px;
   height: 2px;
-  right: 0;
+  right: -1px;
   bottom: 3px;
   background: #000;
   transform: rotate(40deg);
@@ -508,7 +519,7 @@ header {
   position: absolute;
   width: 10px;
   height: 2px;
-  right: -1px;
+  right: -0.7px;
   top: 3px;
   background: #000;
   transform: rotate(-40deg);
@@ -525,10 +536,6 @@ header {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image: url(/img/Bg-butterfly.png);
-  background-size: cover;
-  background-position: left;
-  background-repeat: no-repeat;
 }
 
 .sec3 .sec3_img {
@@ -548,6 +555,7 @@ header {
   background-size: auto;
   backdrop-filter: blur(4px);
   border-radius: 5px;
+  object-fit: cover;
 }
 
 .sec3 .sec3_text {
@@ -555,11 +563,11 @@ header {
 }
 
 .sec3 .sec3_text h1 {
-  font-size: 20px;
+  font-size: 17px;
 }
 
 .sec3 .sec3_text h3 {
-  font-size: 15px;
+  font-size: 13px;
   font-weight: normal;
   padding: 20px 0 0 0;
 }
@@ -571,6 +579,7 @@ header {
   bottom: 0;
   background: #000;
   border-radius: 50px;
+  transform: translate(0%);
 }
 
 .sec3 .nextArrow::before {
@@ -578,7 +587,7 @@ header {
   position: absolute;
   width: 10px;
   height: 2px;
-  right: 0;
+  right: -2px;
   bottom: 3px;
   background: #000;
   transform: rotate(40deg);
@@ -590,10 +599,99 @@ header {
   position: absolute;
   width: 10px;
   height: 2px;
-  right: -1px;
+  right: -2px;
   top: 3px;
   background: #000;
   transform: rotate(-40deg);
   border-radius: 50px;
+}
+
+.sec4 {
+  position: relative;
+  height: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.sec4 .sec4_text {
+  padding: 20px;
+}
+
+.sec4 .sec4_text h1 {
+  font-size: 20px;
+}
+
+.sec4 .sec4_carrosel {
+  position: relative;
+  margin-top: 1em;
+  width: 150px;
+  height: 150px;
+  background-color: darkgrey;
+  border-radius: 5px;
+}
+
+.sec4 .sec4_carrosel::before {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: lightgrey;
+  border-radius: 5px;
+  left: 110%;
+}
+
+.sec4 .sec4_carrosel::after {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: lightgrey;
+  border-radius: 5px;
+  right: 110%;
+}
+
+.sec4 .sec4_carrosel .sec4_carrosel-img {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-image: url(/img/Borduren.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+}
+
+.sec4 .sec4_carrosel-dotts {
+  position: relative;
+  width: 29px;
+  height: 5px;
+  background-color: #0073B7;
+  border-radius: 5px;
+  margin-top: 1em;
+}
+
+.sec4 .sec4_carrosel-dotts::before {
+  content: "";
+  position: absolute;
+  width: 29px;
+  height: 5px;
+  right: 120%;
+  background-color: #00BBCA;
+  border-radius: 5px;
+}
+
+.sec4 .sec4_carrosel-dotts::after {
+  content: "";
+  position: absolute;
+  width: 29px;
+  height: 5px;
+  left: 120%;
+  background-color: #00BBCA;
+  border-radius: 5px;
 }
 /*# sourceMappingURL=main.css.map */
