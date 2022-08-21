@@ -328,6 +328,55 @@ header {
   border-radius: 50px;
 }
 
+.carousel {
+  position: relative;
+}
+
+.carousel .carousel_item {
+  height: 150px;
+  width: 150px;
+  background-color: #fff;
+  padding: 1em;
+  display: none;
+  font-size: 2em;
+  color: black;
+}
+
+.carousel .carousel-item--selected {
+  display: block;
+}
+
+.carousel .carousel_nav {
+  width: 100%;
+  padding: 20px 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+
+.carousel .carousel_nav .carousel-dott {
+  width: 29px;
+  height: 5px;
+  display: inline-block;
+  background: #0073B7;
+  border-radius: 5px;
+  margin: 0 2px;
+  cursor: pointer;
+}
+
+.carousel .carousel_nav .carousel-dott:first-child {
+  background-color: #00BBCA;
+}
+
+.carousel .carousel_nav .carousel-dott:last-child {
+  background-color: #00BBCA;
+}
+
+.carousel .carousel_nav .carousel-dott--selected {
+  background-color: #0073B7;
+}
+
 .home {
   min-height: 90vh;
   position: relative;
@@ -479,7 +528,7 @@ header {
 }
 
 .sec2 .sec2_text {
-  padding: 5px 10px 20px 10px;
+  padding: 5px 20px 20px 20px;
 }
 
 .sec2 .sec2_text h1 {
@@ -559,7 +608,7 @@ header {
 }
 
 .sec3 .sec3_text {
-  padding: 5px 10px 20px 10px;
+  padding: 5px 20px 20px 20px;
 }
 
 .sec3 .sec3_text h1 {

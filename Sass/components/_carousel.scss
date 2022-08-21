@@ -1,0 +1,50 @@
+.carousel{
+    position: relative;
+
+    .carousel_item{
+        height: 150px;
+        width: 150px;
+        background-color: #fff;
+        padding: 1em;
+        display: none;
+        font-size: 2em;
+        color: black;
+
+        
+    }
+.carousel-item--selected{
+            display: block;
+        }
+    .carousel_nav{
+        width: 100%;
+        padding: 20px 0;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        text-align: center;
+
+        .carousel-dott{
+            width: 29px;
+            height: 5px;
+            display: inline-block;
+            background: $primery-clr;
+            border-radius: 5px;
+            margin: 0 2px;
+            cursor: pointer;
+
+            &:first-child{
+                background-color: $secundaire-clr;
+            }
+
+            &:last-child{
+                background-color: $secundaire-clr;
+            }
+
+        }
+.carousel-dott--selected{
+            background-color: $primery-clr;
+        }
+        
+        
+    }
+}
